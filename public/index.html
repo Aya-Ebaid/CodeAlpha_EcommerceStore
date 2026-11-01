@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dar Home | Furniture for every room</title>
+  <meta name="description" content="Dar Home sells sofas, beds, dining sets and more for every room of your home.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo">Dar Home</a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#/" class="nav-link">Shop</a>
+        <a href="#/orders" class="nav-link" id="nav-orders" hidden>My orders</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#/login" class="nav-link" id="nav-login">Sign in</a>
+        <span class="user-name" id="nav-user" hidden></span>
+        <button class="link-btn" id="nav-logout" type="button" hidden>Sign out</button>
+        <a href="#/cart" class="cart-link" aria-label="Open cart">
+          Cart <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="container" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="logo logo-small">Dar Home</span>
+      <span>Furniture for every room of your home.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
